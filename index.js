@@ -145,7 +145,7 @@ ${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}
 			return msg.channel.send('تم إيقاف الموسيقى مؤقتا!');
 		}
 		return msg.channel.send('There is nothing playing.');
-	} else if (command === `resume`) {
+	} else if (command === `resum`) {
 		if (serverQueue && !serverQueue.playing) {
 			serverQueue.playing = true;
 			serverQueue.connection.dispatcher.resume();
@@ -251,12 +251,12 @@ client.on('message', msg => {
 msg.author.send("Commands ستاتي " + `  **
 
    "  : الاوامر "
-:headphones:  ${prefix}play |اسم لاغنيه / رابط الاغنية
-:headphones:  ${prefix}skipللإنتقاال الى الاغنيه التاليه (\اذا كان هناك بقائمة الانتظار\
-:headphones:  ${prefix}stop|لأيقاف الموسيقى
-:headphones:  ${prefix}volume |لتغير حجم الصوت
+:headphones:  ${prefix}pl |اسم لاغنيه / رابط الاغنية
+:headphones:  ${prefix}skiللإنتقاال الى الاغنيه التاليه (\اذا كان هناك بقائمة الانتظار\
+:headphones:  ${prefix}sto|لأيقاف الموسيقى
+:headphones:  ${prefix}volum|لتغير حجم الصوت
 :headphones:  ${prefix}np | لإقاف الموسيقى مؤقتا
-:headphones:  ${prefix}resume |لاعادت تشغيل الاغنية الموجودة
+:headphones:  ${prefix}resum|لاعادت تشغيل الاغنية الموجودة
 **`);
  }
 });
