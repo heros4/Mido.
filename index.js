@@ -263,7 +263,7 @@ msg.author.send("Commands ستاتي " + `  **
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Mido King |`,"https://youtu.be/qdfP7jzpvZ8")
+client.user.setGame(`Mido King |`,"https://www.twitch.tv/lboghaz_kingheros")
   console.log('')
   console.log('')
   console.log('+[-----------------------------------------------------------------]+')
