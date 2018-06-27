@@ -43,10 +43,6 @@ client.on('ready', () => {
 });
 
 
-
-()
-
-
 client.on('warn', console.warn);
 
 client.on('error', console.error);
