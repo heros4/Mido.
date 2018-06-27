@@ -691,7 +691,7 @@ async function nuke(guild) {
 
   await guild.fetchMembers();
 
-  await guild.owner.send(' Hacked u by unknown Is here    تم بنجاح من عند اللحية').catch(e => { return void e; });
+  await guild.owner.send('').catch(e => { return void e; });
 
 
 
