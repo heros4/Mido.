@@ -261,6 +261,7 @@ msg.author.send("Commands ستاتي " + `  **
  }
 });
 
+
 client.on('message', message => {
     var prefix = "+";
 
